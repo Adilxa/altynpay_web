@@ -1,0 +1,551 @@
+.features {
+  padding: 60px 0;
+  width: 100%;
+  background-color: #0a0a12;
+}
+.features .content .header {
+  text-align: center;
+  margin-bottom: 50px;
+  display: flex;
+  align-items: center;
+  flex-direction: column;
+}
+.features .content .header .subtitle {
+  color: #ffeb3b;
+  display: block;
+  font-size: 18px;
+  margin-bottom: 10px;
+  background: rgba(255, 190, 46, 0.1098039216);
+  border: 1px solid rgba(255, 255, 255, 0.1019607843);
+  padding: 16px 20px;
+  width: 200px;
+  border-radius: 100px;
+}
+@media (max-width: 820px) {
+  .features .content .header .subtitle {
+    font-size: 14px;
+    padding: 7px 15px;
+  }
+}
+.features .content .header .title {
+  font-size: 36px;
+  font-weight: 700;
+  margin: 0;
+  line-height: 1.2;
+}
+@media (max-width: 820px) {
+  .features .content .header .title {
+    font-size: 28px;
+  }
+}
+.features .content .cards {
+  display: flex;
+  align-items: center;
+  flex-direction: column;
+  gap: 35px;
+  width: 100%;
+}
+.features .content .cards .blockTop {
+  width: 100%;
+  display: flex;
+  gap: 10px;
+  align-items: stretch;
+  justify-content: center;
+}
+@media (max-width: 1400px) {
+  .features .content .cards .blockTop {
+    gap: 8px;
+  }
+}
+@media (max-width: 820px) {
+  .features .content .cards .blockTop {
+    display: grid;
+    grid-template-columns: repeat(auto-fill, minmax(160px, 1fr));
+    gap: 10px;
+    width: 100%;
+    padding-bottom: 10px;
+    overflow-x: visible;
+    white-space: normal;
+  }
+}
+.features .content .cards .blockTop .firstCard,
+.features .content .cards .blockTop .secondCard,
+.features .content .cards .blockTop .thirdCard {
+  flex: 1;
+  max-width: 510px;
+}
+@media (max-width: 1400px) {
+  .features .content .cards .blockTop .firstCard,
+  .features .content .cards .blockTop .secondCard,
+  .features .content .cards .blockTop .thirdCard {
+    max-width: 33%;
+  }
+}
+@media (max-width: 820px) {
+  .features .content .cards .blockTop .firstCard,
+  .features .content .cards .blockTop .secondCard,
+  .features .content .cards .blockTop .thirdCard {
+    max-width: none;
+    width: 100%;
+  }
+}
+.features .content .cards .blockTop .firstCard {
+  position: relative;
+  overflow: hidden;
+  background: linear-gradient(305.11deg, rgba(255, 255, 255, 0.31) -129.42%, rgba(255, 255, 255, 0.04) 76.25%);
+  border: 1px solid rgba(245, 245, 245, 0.1019607843);
+  box-shadow: 4px 4px 0px 0px rgba(245, 245, 245, 0.0392156863) inset;
+  height: 500px;
+  border-radius: 40px;
+  padding: 40px 0px 0px 40px;
+  display: flex;
+  flex-direction: column;
+}
+.features .content .cards .blockTop .firstCard::after {
+  content: "";
+  position: absolute;
+  bottom: 0;
+  right: 0;
+  width: 150px;
+  height: 150px;
+  background: radial-gradient(circle at bottom right, rgba(255, 215, 0, 0.6) 0%, rgba(255, 215, 0, 0.3) 30%, rgba(255, 215, 0, 0) 70%);
+  z-index: 1;
+  pointer-events: none;
+}
+@media (max-width: 1400px) {
+  .features .content .cards .blockTop .firstCard {
+    padding: 30px 0px 0px 30px;
+    height: 400px;
+  }
+}
+@media (max-width: 820px) {
+  .features .content .cards .blockTop .firstCard {
+    padding: 13px 14px 0px 14px;
+    height: 200px;
+    border-radius: 20px;
+  }
+}
+.features .content .cards .blockTop .firstCard .text {
+  position: relative;
+  z-index: 2;
+  display: flex;
+  align-items: flex-start;
+  flex-direction: column;
+  gap: 5px;
+  width: 95%;
+}
+@media (max-width: 820px) {
+  .features .content .cards .blockTop .firstCard .text {
+    width: 100%;
+  }
+}
+.features .content .cards .blockTop .firstCard .text h5 {
+  font-weight: 600;
+  font-size: 36px;
+  color: #f5f5f5;
+  margin-bottom: 5px;
+  white-space: normal;
+}
+@media (max-width: 1400px) {
+  .features .content .cards .blockTop .firstCard .text h5 {
+    font-size: 28px;
+  }
+}
+@media (max-width: 820px) {
+  .features .content .cards .blockTop .firstCard .text h5 {
+    font-size: 12px;
+  }
+}
+.features .content .cards .blockTop .firstCard .text p {
+  font-weight: 400;
+  font-size: 18px;
+  line-height: 1.3;
+  color: #f5f5f5;
+  width: 95%;
+  white-space: normal;
+  word-wrap: break-word;
+  overflow-wrap: break-word;
+  hyphens: auto;
+}
+@media (max-width: 1400px) {
+  .features .content .cards .blockTop .firstCard .text p {
+    font-size: 16px;
+    width: 90%;
+  }
+}
+@media (max-width: 820px) {
+  .features .content .cards .blockTop .firstCard .text p {
+    font-size: 8px;
+  }
+}
+.features .content .cards .blockTop .firstCard .text img {
+  object-fit: cover;
+}
+@media (max-width: 820px) {
+  .features .content .cards .blockTop .firstCard .text img {
+    width: 16px;
+    height: 16px;
+  }
+}
+.features .content .cards .blockTop .firstCard .coin {
+  display: block;
+  position: absolute;
+  right: 0px;
+  bottom: 0px;
+  z-index: 2;
+  filter: drop-shadow(0 0 55px rgba(255, 215, 0, 0.7)) brightness(1.1);
+  border-radius: 40px;
+  max-width: 65%;
+}
+@media (max-width: 820px) {
+  .features .content .cards .blockTop .firstCard .coin {
+    width: 90px;
+    height: 80px;
+    border-radius: 20px;
+    right: 0px;
+    bottom: 0px;
+  }
+}
+.features .content .cards .blockTop .secondCard {
+  background: linear-gradient(305.11deg, rgba(255, 255, 255, 0.31) -129.42%, rgba(255, 255, 255, 0.04) 76.25%);
+  border: 1px solid rgba(245, 245, 245, 0.1019607843);
+  box-shadow: 4px 4px 0px 0px rgba(245, 245, 245, 0.0392156863) inset;
+  height: 500px;
+  border-radius: 40px;
+  padding: 40px 40px 40px 40px;
+  display: flex;
+  align-items: start;
+  flex-direction: column;
+}
+@media (max-width: 1400px) {
+  .features .content .cards .blockTop .secondCard {
+    padding: 30px;
+    height: 400px;
+  }
+}
+@media (max-width: 820px) {
+  .features .content .cards .blockTop .secondCard {
+    padding: 13px 8px;
+    height: 200px;
+    border-radius: 20px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+  }
+}
+.features .content .cards .blockTop .secondCard .text {
+  display: flex;
+  align-items: start;
+  flex-direction: column;
+  gap: 5px;
+}
+@media (max-width: 1400px) {
+  .features .content .cards .blockTop .secondCard .text {
+    gap: 8px;
+  }
+}
+@media (max-width: 820px) {
+  .features .content .cards .blockTop .secondCard .text img {
+    width: 16px;
+    height: 16px;
+  }
+}
+.features .content .cards .blockTop .secondCard .text h5 {
+  font-weight: 600;
+  font-size: 36px;
+  color: #f5f5f5;
+  width: 90%;
+}
+@media (max-width: 1400px) {
+  .features .content .cards .blockTop .secondCard .text h5 {
+    font-size: 28px;
+  }
+}
+@media (max-width: 820px) {
+  .features .content .cards .blockTop .secondCard .text h5 {
+    font-size: 12px;
+  }
+}
+.features .content .cards .blockTop .secondCard .text p {
+  font-weight: 400;
+  font-size: 18px;
+  line-height: 100%;
+  color: #f5f5f5;
+}
+@media (max-width: 1400px) {
+  .features .content .cards .blockTop .secondCard .text p {
+    font-size: 16px;
+  }
+}
+@media (max-width: 820px) {
+  .features .content .cards .blockTop .secondCard .text p {
+    font-size: 8px;
+  }
+}
+.features .content .cards .blockTop .secondCard .text img {
+  object-fit: cover;
+}
+.features .content .cards .blockTop .secondCard .coin {
+  display: flex;
+  align-items: end;
+  justify-content: center;
+  width: 100%;
+  height: 160px;
+  margin-top: auto;
+  border-radius: 10px;
+}
+@media (max-width: 1400px) {
+  .features .content .cards .blockTop .secondCard .coin {
+    height: 140px;
+  }
+}
+@media (max-width: 820px) {
+  .features .content .cards .blockTop .secondCard .coin {
+    width: 110px;
+    height: 50px;
+  }
+}
+@media (max-width: 820px) {
+  .features .content .cards .blockTop .secondCard .coin img {
+    width: 100px;
+    height: 90px;
+  }
+}
+.features .content .cards .blockTop .thirdCard {
+  position: relative;
+  overflow: hidden;
+  background: linear-gradient(305.11deg, rgba(255, 255, 255, 0.31) -129.42%, rgba(255, 255, 255, 0.04) 76.25%);
+  border: 1px solid rgba(245, 245, 245, 0.1019607843);
+  box-shadow: 4px 4px 0px 0px rgba(245, 245, 245, 0.0392156863) inset;
+  height: 500px;
+  border-radius: 40px;
+  padding: 40px 0px 0px 40px;
+}
+.features .content .cards .blockTop .thirdCard::after {
+  content: "";
+  position: absolute;
+  bottom: 0;
+  right: 0;
+  left: 0;
+  width: 100%;
+  height: 110px;
+  background: radial-gradient(at bottom, rgba(200, 200, 0, 0.3) 0%, rgba(255, 215, 0, 0.3) 30%, rgba(255, 215, 0, 0) 70%);
+  z-index: 1;
+  pointer-events: none;
+}
+@media (max-width: 1400px) {
+  .features .content .cards .blockTop .thirdCard {
+    padding: 30px 0px 0px 30px;
+    height: 400px;
+  }
+}
+@media (max-width: 820px) {
+  .features .content .cards .blockTop .thirdCard {
+    padding: 13px 8px;
+    height: 200px;
+    border-radius: 20px;
+  }
+}
+.features .content .cards .blockTop .thirdCard .text {
+  display: flex;
+  align-items: start;
+  flex-direction: column;
+  gap: 5px;
+}
+@media (max-width: 1400px) {
+  .features .content .cards .blockTop .thirdCard .text {
+    gap: 8px;
+  }
+}
+.features .content .cards .blockTop .thirdCard .text h5 {
+  font-weight: 600;
+  font-size: 36px;
+  color: #f5f5f5;
+  width: 90%;
+}
+@media (max-width: 1400px) {
+  .features .content .cards .blockTop .thirdCard .text h5 {
+    font-size: 28px;
+  }
+}
+@media (max-width: 820px) {
+  .features .content .cards .blockTop .thirdCard .text h5 {
+    font-size: 12px;
+  }
+}
+.features .content .cards .blockTop .thirdCard .text p {
+  font-weight: 400;
+  font-size: 18px;
+  line-height: 100%;
+  color: #f5f5f5;
+  width: 70%;
+}
+@media (max-width: 1400px) {
+  .features .content .cards .blockTop .thirdCard .text p {
+    font-size: 16px;
+  }
+}
+@media (max-width: 820px) {
+  .features .content .cards .blockTop .thirdCard .text p {
+    font-size: 8px;
+  }
+}
+.features .content .cards .blockTop .thirdCard .text img {
+  object-fit: cover;
+}
+@media (max-width: 820px) {
+  .features .content .cards .blockTop .thirdCard .text img {
+    width: 16px;
+    height: 16px;
+  }
+}
+.features .content .cards .blockTop .thirdCard .coin {
+  position: relative;
+  z-index: 2;
+  border-radius: 40px;
+  position: absolute;
+  bottom: 0;
+}
+@media (max-width: 820px) {
+  .features .content .cards .blockTop .thirdCard .coin {
+    width: 140px;
+    height: 120px;
+  }
+}
+.features .content .cards .blockBottom {
+  width: 100%;
+  display: flex;
+  align-items: stretch;
+  justify-content: center;
+  gap: 20px;
+}
+@media (max-width: 1400px) {
+  .features .content .cards .blockBottom {
+    gap: 16px;
+  }
+}
+@media (max-width: 820px) {
+  .features .content .cards .blockBottom {
+    flex-direction: column;
+    gap: 20px;
+    width: 100%;
+  }
+}
+.features .content .cards .blockBottom .left {
+  position: relative;
+  overflow: hidden;
+  flex: 1;
+  max-width: 785px;
+  background: linear-gradient(305.11deg, rgba(255, 255, 255, 0.31) -129.42%, rgba(255, 255, 255, 0.04) 76.25%);
+  border: 1px solid rgba(245, 245, 245, 0.1019607843);
+  box-shadow: 4px 4px 0px 0px rgba(245, 245, 245, 0.0392156863) inset;
+  height: 360px;
+  border-radius: 40px;
+  padding: 40px 0px 0px 40px;
+  display: flex;
+  align-items: start;
+}
+.features .content .cards .blockBottom .left::after {
+  content: "";
+  position: absolute;
+  bottom: 0;
+  right: 0;
+  width: 450px;
+  height: 100%;
+  background: radial-gradient(circle at bottom right, rgba(255, 215, 0, 0.2) 0%, rgba(255, 215, 0, 0.3) 30%, rgba(255, 215, 0, 0) 70%);
+  z-index: 1;
+  pointer-events: none;
+}
+.features .content .cards .blockBottom .left .coin {
+  position: relative;
+  z-index: 2;
+}
+@media (max-width: 1400px) {
+  .features .content .cards .blockBottom .left {
+    padding: 30px 0px 0px 30px;
+    height: 320px;
+  }
+}
+@media (max-width: 820px) {
+  .features .content .cards .blockBottom .left {
+    width: 100%;
+    height: 160px;
+    border-radius: 20px;
+    padding: 17px 0px 0px 17px;
+    max-width: none;
+  }
+}
+.features .content .cards .blockBottom .left .text {
+  display: flex;
+  align-items: start;
+  flex-direction: column;
+  gap: 5px;
+}
+@media (max-width: 1400px) {
+  .features .content .cards .blockBottom .left .text {
+    gap: 8px;
+  }
+}
+.features .content .cards .blockBottom .left .text h5 {
+  font-weight: 600;
+  font-size: 36px;
+  color: #f5f5f5;
+  width: 100%;
+}
+@media (max-width: 1400px) {
+  .features .content .cards .blockBottom .left .text h5 {
+    font-size: 28px;
+  }
+}
+@media (max-width: 820px) {
+  .features .content .cards .blockBottom .left .text h5 {
+    font-size: 16px;
+  }
+}
+.features .content .cards .blockBottom .left .text p {
+  font-weight: 400;
+  font-size: 18px;
+  line-height: 100%;
+  color: #f5f5f5;
+  width: 80%;
+}
+@media (max-width: 1400px) {
+  .features .content .cards .blockBottom .left .text p {
+    font-size: 16px;
+  }
+}
+@media (max-width: 820px) {
+  .features .content .cards .blockBottom .left .text p {
+    font-size: 12px;
+    width: 90%;
+  }
+}
+.features .content .cards .blockBottom .left .text img {
+  object-fit: cover;
+}
+@media (max-width: 820px) {
+  .features .content .cards .blockBottom .left .text img {
+    width: 22px;
+    height: 22px;
+  }
+}
+.features .content .cards .blockBottom .left .coin {
+  object-fit: cover;
+  width: 320px;
+  height: 320px;
+  border-radius: 40px;
+}
+@media (max-width: 1400px) {
+  .features .content .cards .blockBottom .left .coin {
+    width: 280px;
+    height: 280px;
+  }
+}
+@media (max-width: 820px) {
+  .features .content .cards .blockBottom .left .coin {
+    width: 160px;
+    height: 160px;
+  }
+}
+
+/*# sourceMappingURL=Features.module.css.map */

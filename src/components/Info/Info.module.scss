@@ -1,0 +1,241 @@
+@mixin tablet {
+  @media (max-width: 1400px) {
+    @content;
+  }
+}
+
+@mixin mobile {
+  @media (max-width: 820px) {
+    @content;
+  }
+}
+.Info {
+  padding: 100px 0;
+  .content {
+    .header {
+      text-align: center;
+      margin-bottom: 50px;
+      display: flex;
+      align-items: center;
+      flex-direction: column;
+      .subtitle {
+        color: #ffeb3b;
+        display: block;
+        font-size: 18px;
+        margin-bottom: 10px;
+        background: #ffbe2e1c;
+        border: 1px solid #ffffff1a;
+        padding: 16px 20px;
+        width: 250px;
+        border-radius: 100px;
+
+        @include mobile() {
+          font-size: 14px;
+          padding: 7px 15px;
+        }
+      }
+
+      .title {
+        font-size: 36px;
+        font-weight: 700;
+        margin: 0;
+        line-height: 1.2;
+        @include mobile() {
+          font-size: 28px;
+        }
+      }
+    }
+
+    .slider {
+      position: relative;
+      display: flex;
+      align-items: center;
+      flex-direction: column;
+      padding: 2rem;
+      color: white;
+      @include mobile() {
+        padding: 10px;
+      }
+
+      .topBox {
+        width: 100%;
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+
+        @include mobile() {
+          display: flex;
+          flex-direction: column-reverse;
+          gap: 15px;
+        }
+        .textSection {
+          max-width: 50%;
+          display: flex;
+          align-items: start;
+          flex-direction: column;
+          gap: 20px;
+          @include mobile() {
+            gap: 10px;
+            max-width: 100%;
+            width: 100%;
+          }
+
+          h2 {
+            font-family: Verdana;
+            font-weight: 700;
+            font-size: 40px;
+
+            @include mobile() {
+              font-size: 22px;
+            }
+          }
+
+          p {
+            font-family: "Mail Sans Roman";
+            font-weight: 400;
+            font-size: 20px;
+            line-height: 130%;
+            letter-spacing: 3%;
+            opacity: 80%;
+            @include mobile() {
+              font-size: 18px;
+            }
+          }
+          .buttons {
+            margin-top: 1rem;
+            display: flex;
+            flex-wrap: wrap;
+            gap: 0.5rem;
+            width: 70%;
+            @include mobile() {
+              width: 100%;
+            }
+
+            span {
+              background: #2d2d30;
+              border: none;
+              color: white;
+              padding: 0.6rem 1rem;
+              border-radius: 20px;
+              border: 1px solid;
+              font-family: "Montserrat Alternates";
+              font-weight: 500;
+              font-size: 24px;
+              leading-trim: Cap height;
+              line-height: 130%;
+              letter-spacing: -4%;
+              text-align: center;
+              vertical-align: middle;
+
+              border-image-source: linear-gradient(
+                95.73deg,
+                rgba(255, 190, 46, 0.24) -63.69%,
+                rgba(255, 255, 255, 0.24) 95.44%
+              );
+
+              @include mobile() {
+                font-size: 12px;
+              }
+            }
+          }
+        }
+
+        .imageSection {
+          max-width: 700px;
+          width: 100%;
+          display: flex;
+          align-items: center;
+          justify-content: center;
+          border: 1px solid #ffffff21;
+          border-radius: 40px;
+          background: linear-gradient(
+            126.54deg,
+            rgba(255, 255, 255, 0.05) 28.72%,
+            rgba(255, 255, 0, 0.05) 93.85%
+          );
+
+          @include mobile() {
+            width: 100%;
+            border-radius: 20px;
+          }
+          img {
+            width: 540px;
+            height: 434px;
+            @include mobile() {
+              width: 250px;
+              height: 200px;
+              object-fit: cover;
+            }
+          }
+        }
+      }
+
+      .bottomBox {
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+        width: 100%;
+        margin-top: 40px;
+
+        .controls {
+          display: flex;
+          align-items: center;
+          button {
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            margin-right: 0.5rem;
+            background: none;
+            border: 1px solid #fff;
+            border-radius: 50%;
+            width: 36px;
+            height: 36px;
+            color: white;
+            cursor: pointer;
+            box-shadow: none !important;
+          }
+        }
+
+        .progressBar {
+          position: absolute;
+          bottom: 50px;
+          left: 120px;
+          right: 100px;
+          height: 2px;
+          background: linear-gradient(
+            to right,
+            transparent,
+            #333 20%,
+            #333 80%,
+            transparent
+          );
+          border-radius: 4px;
+          overflow: hidden;
+          @include mobile() {
+            bottom: 25px;
+            left: 90px;
+            right: 40px;
+          }
+
+          .fill {
+            height: 100%;
+            background: linear-gradient(
+              to right,
+              transparent,
+              yellow 20%,
+              yellow 80%,
+              transparent
+            );
+            border-radius: 4px;
+            transition: width 0.3s ease;
+          }
+        }
+
+        .counter {
+          font-size: 1.5rem;
+          font-weight: bold;
+        }
+      }
+    }
+  }
+}
