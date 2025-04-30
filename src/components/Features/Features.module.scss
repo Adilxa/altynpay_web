@@ -10,10 +10,18 @@
   }
 }
 
+@font-face {
+  font-family: "Mail Sans Roman";
+  src: url("/public/fonts/MailSansRoman-Light.woff2") format("woff2"),
+    url("/public/fonts/MailSansRoman-Light.woff") format("woff");
+  font-weight: normal;
+  font-style: normal;
+  font-display: swap;
+}
+
 .features {
   padding: 60px 0;
   width: 100%;
-  background-color: #0a0a12;
 
   .content {
     .header {
@@ -63,18 +71,9 @@
         width: 100%;
         display: flex;
         gap: 10px;
-        // align-items: stretch;
-        // justify-content: center;
-
-        @include tablet() {
-          gap: 8px;
-        }
 
         @include mobile() {
-          // display: grid;
-          // grid-template-columns: repeat(auto-fill, minmax(160px, 1fr));
-          gap: 10px;
-          // width: 100%;
+          gap: 6px;
           padding-bottom: 10px;
           overflow-x: scroll;
           white-space: normal;
@@ -92,6 +91,7 @@
 
           @include mobile() {
             min-width: 180px;
+            width: 200px;
             width: 100%;
           }
         }
@@ -158,37 +158,38 @@
               font-size: 36px;
               color: #f5f5f5;
               margin-bottom: 5px;
-              white-space: normal;
 
               @include tablet() {
                 font-size: 28px;
+                margin-bottom: 0;
               }
 
               @include mobile() {
-                font-size: 11px;
+                font-size: 12px;
                 width: 100%;
+
+                font-weight: 600;
+                font-size: 16px;
+                line-height: 90%;
+                letter-spacing: -6%;
               }
             }
 
             p {
+              font-family: "Mail Sans Roman", sans-serif;
               font-weight: 400;
               font-size: 18px;
               line-height: 1.3;
               color: #f5f5f5;
               width: 95%;
-              white-space: normal;
-              word-wrap: break-word;
-              overflow-wrap: break-word;
-              hyphens: auto;
-
-              @include tablet() {
-                font-size: 16px;
-                width: 90%;
-                line-height: 100%;
-              }
 
               @include mobile() {
-                font-size: 8px;
+                width: 85%;
+                font-family: "Mail Sans Roman", sans-serif;
+                font-weight: 400;
+                font-size: 11px;
+                line-height: 100%;
+                letter-spacing: 0%;
               }
             }
 
@@ -196,8 +197,8 @@
               object-fit: cover;
 
               @include mobile() {
-                width: 16px;
-                height: 16px;
+                width: 18px;
+                height: 18px;
               }
             }
           }
@@ -213,8 +214,8 @@
             max-width: 65%;
 
             @include mobile() {
-              width: 90px;
-              height: 80px;
+              width: 110px;
+              height: 110px;
               border-radius: 20px;
               right: 0px;
               bottom: 0px;
@@ -256,6 +257,7 @@
             align-items: start;
             flex-direction: column;
             gap: 5px;
+            width: 95%;
 
             @include tablet() {
               gap: 8px;
@@ -272,29 +274,46 @@
               font-weight: 600;
               font-size: 36px;
               color: #f5f5f5;
-              width: 90%;
+              margin-bottom: 5px;
 
               @include tablet() {
                 font-size: 28px;
+                margin-bottom: 0;
               }
 
               @include mobile() {
                 font-size: 12px;
+                width: 100%;
+
+                font-weight: 600;
+                font-size: 16px;
+                line-height: 90%;
+                letter-spacing: -6%;
               }
             }
 
             p {
+              font-family: "Mail Sans Roman", sans-serif;
               font-weight: 400;
               font-size: 18px;
-              line-height: 100%;
+              line-height: 1.3;
               color: #f5f5f5;
+              width: 95%;
 
               @include tablet() {
-                font-size: 16px;
+                font-weight: 400;
+                font-size: 12px;
+                line-height: 100%;
+                letter-spacing: 0%;
               }
 
               @include mobile() {
-                font-size: 8px;
+                width: 95%;
+                font-family: "Mail Sans Roman", sans-serif;
+                font-weight: 400;
+                font-size: 12px;
+                line-height: 100%;
+                letter-spacing: 0%;
               }
             }
 
@@ -317,14 +336,14 @@
             }
 
             @include mobile() {
-              width: 110px;
-              height: 50px;
+              width: 150px;
+              height: 60px;
             }
 
             img {
               @include mobile() {
-                width: 100px;
-                height: 90px;
+                width: 150px;
+                height: 130px;
               }
             }
           }
@@ -379,6 +398,7 @@
             align-items: start;
             flex-direction: column;
             gap: 5px;
+            width: 95%;
 
             @include tablet() {
               gap: 8px;
@@ -388,30 +408,45 @@
               font-weight: 600;
               font-size: 36px;
               color: #f5f5f5;
-              width: 90%;
+              margin-bottom: 5px;
 
               @include tablet() {
                 font-size: 28px;
+                margin-bottom: 0;
               }
 
               @include mobile() {
                 font-size: 12px;
+                width: 100%;
+
+                font-weight: 600;
+                font-size: 16px;
+                line-height: 90%;
+                letter-spacing: -6%;
               }
             }
-
             p {
+              font-family: "Mail Sans Roman", sans-serif;
               font-weight: 400;
               font-size: 18px;
-              line-height: 100%;
+              line-height: 1.3;
               color: #f5f5f5;
-              width: 70%;
+              width: 95%;
 
               @include tablet() {
-                font-size: 16px;
+                font-weight: 400;
+                font-size: 12px;
+                line-height: 100%;
+                letter-spacing: 0%;
               }
 
               @include mobile() {
-                font-size: 8px;
+                width: 95%;
+                font-family: "Mail Sans Roman", sans-serif;
+                font-weight: 400;
+                font-size: 12px;
+                line-height: 100%;
+                letter-spacing: 0%;
               }
             }
 
@@ -432,8 +467,8 @@
             bottom: 0;
 
             @include mobile() {
-              width: 140px;
-              height: 120px;
+              width: 150px;
+              height: 100px;
             }
           }
         }

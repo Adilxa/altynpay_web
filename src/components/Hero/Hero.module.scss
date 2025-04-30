@@ -20,10 +20,10 @@
   .content {
     padding: 120px 90px;
     background: linear-gradient(
-                    284.33deg,
-                    rgba(255, 204, 0, 0.19) -30.13%,
-                    rgba(14, 23, 89, 0) 43.83%,
-                    rgba(153, 153, 153, 0) 109.08%
+      284.33deg,
+      rgba(255, 204, 0, 0.19) -30.13%,
+      rgba(14, 23, 89, 0) 43.83%,
+      rgba(153, 153, 153, 0) 109.08%
     );
     border-radius: 80px;
     border: 1px solid #ffffff1c;
@@ -194,6 +194,7 @@
           width: 100%;
           justify-content: space-between;
           margin-top: 15px;
+          padding-right: 0;
         }
 
         span {
