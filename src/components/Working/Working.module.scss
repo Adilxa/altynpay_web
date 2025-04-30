@@ -9,6 +9,15 @@
     @content;
   }
 }
+
+@font-face {
+  font-family: "Mail Sans Roman";
+  src: url("/public/fonts/MailSansRoman-Light.woff2") format("woff2"),
+    url("/public/fonts/MailSansRoman-Light.woff") format("woff");
+  font-weight: normal;
+  font-style: normal;
+  font-display: swap;
+}
 .Working {
   padding: 100px 0;
   .content {
@@ -94,9 +103,9 @@
         }
 
         p {
-          font-family: "Mail Sans Roman";
+          font-family: "Mail Sans Roman", sans-serif;
           font-weight: 300;
-          font-size: 24px;
+          font-size: 22px;
           color: #f5f5f5;
           opacity: 70%;
           width: 80%;
