@@ -69,7 +69,7 @@ const Features = () => {
                   <p>{t.quickIntegrationDesc}</p>
                 </div>
                 <Image
-                  style={{ bottom: "-10px" }}
+                  // style={{ bottom: "-10px" }}
                   src={computer}
                   alt="photo"
                   className={s.coin}

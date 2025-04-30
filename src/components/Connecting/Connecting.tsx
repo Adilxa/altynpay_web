@@ -1,7 +1,6 @@
 "use client";
 import Image from "next/image";
 import s from "./Connecting.module.scss";
-import photo from "@/assets/images/copy-dynamic-premium.png";
 import { useTranslation } from "@/hooks/useTranslation";
 
 const Connecting = () => {

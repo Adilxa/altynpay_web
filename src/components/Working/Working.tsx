@@ -13,7 +13,6 @@ const Working = () => {
             <span className={s.subtitle}>{t.workingSubtitle}</span>
             <h2 className={s.title}>{t.workingTitle}</h2>
           </div>
-
           <div className={s.box}>
             <div className={s.boxLeft}>
               <span className={s.subtitle}>{t.calculated}</span>
