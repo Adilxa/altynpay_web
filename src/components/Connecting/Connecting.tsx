@@ -2,6 +2,7 @@
 import Image from "next/image";
 import s from "./Connecting.module.scss";
 import { useTranslation } from "@/hooks/useTranslation";
+import Link from "next/link";
 
 const Connecting = () => {
   const { t } = useTranslation();
@@ -40,7 +41,9 @@ const Connecting = () => {
           </div>
 
           <div className={s.buttonWrapper}>
-            <button className={s.button}>{t.connectingButton}</button>
+            <Link href="/form">
+              <button className={s.button}>{t.connectingButton}</button>
+            </Link>
           </div>
         </div>
       </div>
