@@ -10,6 +10,15 @@
   }
 }
 
+@font-face {
+  font-family: "Mail Sans Roman";
+  src: url("/public/fonts/MailSansRoman-Light.woff2") format("woff2"),
+    url("/public/fonts/MailSansRoman-Light.woff") format("woff");
+  font-weight: normal;
+  font-style: normal;
+  font-display: swap;
+}
+
 .Connecting {
   .content {
     .header {
@@ -68,7 +77,7 @@
           flex-direction: column;
           gap: 10px;
           width: 500px;
-          height: 400px;
+          height: 450px;
           padding: 0 40px;
           background: linear-gradient(
             305.11deg,
@@ -94,7 +103,7 @@
           }
           p {
             text-align: center;
-            font-family: "Mail Sans Roman";
+            font-family: "Mail Sans Roman", sans-serif;
             font-weight: 400;
             font-size: 24px;
             @include mobile() {

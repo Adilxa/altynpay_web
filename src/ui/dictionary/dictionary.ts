@@ -1,3 +1,7 @@
+import draft from "@/assets/images/copy-dynamic-premium.png";
+import card from "@/assets/images/card-dynamic-premium.png";
+import wallet from "@/assets/images/wallet-dynamic-premium.png";
+
 export const dictionary = {
   ru: {
     home: "Главная",
@@ -73,15 +77,15 @@ export const dictionary = {
     connectingButton: "Подключить бизнес",
     connectingSteps: [
       {
-        icon: "/icons/form-icon.svg",
+        icon: draft,
         text: "Оставьте заявку на подключение в вашем расчётном банке",
       },
       {
-        icon: "/icons/card-icon.svg",
+        icon: card,
         text: "Выберите удобный способ установки сервиса из предложенных банком",
       },
       {
-        icon: "/icons/wallet-icon.svg",
+        icon: wallet,
         text: "Начинайте принимать платежи удобными способами, экономить и зарабатывать больше",
       },
     ],
