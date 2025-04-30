@@ -9,9 +9,11 @@ import map from "@/assets/icons/Map Point.svg";
 import telegram from "@/assets/images/telegram.png";
 import whatsapp from "@/assets/images/whatsapp.png";
 import { useTranslation } from "@/hooks/useTranslation";
+import { usePathname } from "next/navigation";
 
 const Footer = () => {
   const { t } = useTranslation();
+  const pathname = usePathname();
 
   return (
     <footer className={s.Footer}>
@@ -54,10 +56,13 @@ const Footer = () => {
                 <h6>{t.whatsapp}</h6>
               </div>
             </div>
-
-            <div className={s.btn}>
-              <button>{t.connectBusiness}</button>
-            </div>
+            {pathname !== "/form" && (
+              <div className={s.btn}>
+                <Link href="/form">
+                  <button>{t.connectBusiness}</button>
+                </Link>
+              </div>
+            )}
           </div>
         </div>
       </div>
