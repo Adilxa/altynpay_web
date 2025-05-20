@@ -22,6 +22,7 @@ export const viewport: Viewport = {
 
 export const metadata: Metadata = {
     metadataBase: new URL('https://altynpay.kg'),
+    manifest: '/manifest.json',
     title: {
         default: "Altynpay | Быстрые и безопасные платежи",
         template: "%s | Altynpay"
