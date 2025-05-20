@@ -1,0 +1,216 @@
+.Info {
+  padding: 100px 0;
+}
+.Info .content .header {
+  text-align: center;
+  margin-bottom: 50px;
+  display: flex;
+  align-items: center;
+  flex-direction: column;
+}
+.Info .content .header .subtitle {
+  color: #ffeb3b;
+  display: block;
+  font-size: 18px;
+  margin-bottom: 10px;
+  background: rgba(255, 190, 46, 0.1098039216);
+  border: 1px solid rgba(255, 255, 255, 0.1019607843);
+  padding: 16px 20px;
+  width: 250px;
+  border-radius: 100px;
+}
+@media (max-width: 820px) {
+  .Info .content .header .subtitle {
+    font-size: 14px;
+    padding: 7px 15px;
+  }
+}
+.Info .content .header .title {
+  font-size: 36px;
+  font-weight: 700;
+  margin: 0;
+  line-height: 1.2;
+}
+@media (max-width: 820px) {
+  .Info .content .header .title {
+    font-size: 28px;
+  }
+}
+.Info .content .slider {
+  position: relative;
+  display: flex;
+  align-items: center;
+  flex-direction: column;
+  padding: 2rem;
+  color: white;
+}
+@media (max-width: 820px) {
+  .Info .content .slider {
+    padding: 10px;
+  }
+}
+.Info .content .slider .topBox {
+  width: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+@media (max-width: 820px) {
+  .Info .content .slider .topBox {
+    display: flex;
+    flex-direction: column-reverse;
+    gap: 15px;
+  }
+}
+.Info .content .slider .topBox .textSection {
+  max-width: 50%;
+  display: flex;
+  align-items: start;
+  flex-direction: column;
+  gap: 20px;
+}
+@media (max-width: 820px) {
+  .Info .content .slider .topBox .textSection {
+    gap: 10px;
+    max-width: 100%;
+    width: 100%;
+  }
+}
+.Info .content .slider .topBox .textSection h2 {
+  font-family: Verdana;
+  font-weight: 700;
+  font-size: 40px;
+}
+@media (max-width: 820px) {
+  .Info .content .slider .topBox .textSection h2 {
+    font-size: 22px;
+  }
+}
+.Info .content .slider .topBox .textSection p {
+  font-family: "Mail Sans Roman";
+  font-weight: 400;
+  font-size: 20px;
+  line-height: 130%;
+  letter-spacing: 3%;
+  opacity: 80%;
+}
+@media (max-width: 820px) {
+  .Info .content .slider .topBox .textSection p {
+    font-size: 18px;
+  }
+}
+.Info .content .slider .topBox .textSection .buttons {
+  margin-top: 1rem;
+  display: flex;
+  flex-wrap: wrap;
+  gap: 0.5rem;
+  width: 70%;
+}
+@media (max-width: 820px) {
+  .Info .content .slider .topBox .textSection .buttons {
+    width: 100%;
+  }
+}
+.Info .content .slider .topBox .textSection .buttons span {
+  background: #2d2d30;
+  border: none;
+  color: white;
+  padding: 0.6rem 1rem;
+  border-radius: 20px;
+  border: 1px solid;
+  font-family: "Montserrat Alternates";
+  font-weight: 500;
+  font-size: 24px;
+  leading-trim: Cap height;
+  line-height: 130%;
+  letter-spacing: -4%;
+  text-align: center;
+  vertical-align: middle;
+  border-image-source: linear-gradient(95.73deg, rgba(255, 190, 46, 0.24) -63.69%, rgba(255, 255, 255, 0.24) 95.44%);
+}
+@media (max-width: 820px) {
+  .Info .content .slider .topBox .textSection .buttons span {
+    font-size: 12px;
+  }
+}
+.Info .content .slider .topBox .imageSection {
+  max-width: 700px;
+  width: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  border: 1px solid rgba(255, 255, 255, 0.1294117647);
+  border-radius: 40px;
+  background: linear-gradient(126.54deg, rgba(255, 255, 255, 0.05) 28.72%, rgba(255, 255, 0, 0.05) 93.85%);
+}
+@media (max-width: 820px) {
+  .Info .content .slider .topBox .imageSection {
+    width: 100%;
+    border-radius: 20px;
+  }
+}
+.Info .content .slider .topBox .imageSection img {
+  width: 540px;
+  height: 434px;
+}
+@media (max-width: 820px) {
+  .Info .content .slider .topBox .imageSection img {
+    width: 250px;
+    height: 200px;
+    object-fit: cover;
+  }
+}
+.Info .content .slider .bottomBox {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  width: 100%;
+  margin-top: 40px;
+}
+.Info .content .slider .bottomBox .controls {
+  display: flex;
+  align-items: center;
+}
+.Info .content .slider .bottomBox .controls button {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  margin-right: 0.5rem;
+  background: none;
+  border: 1px solid #fff;
+  border-radius: 50%;
+  width: 36px;
+  height: 36px;
+  color: white;
+  cursor: pointer;
+  box-shadow: none !important;
+}
+.Info .content .slider .bottomBox .progressBar {
+  position: absolute;
+  bottom: 50px;
+  left: 120px;
+  right: 100px;
+  height: 2px;
+  background: linear-gradient(to right, transparent, #333 20%, #333 80%, transparent);
+  border-radius: 4px;
+  overflow: hidden;
+}
+@media (max-width: 820px) {
+  .Info .content .slider .bottomBox .progressBar {
+    bottom: 25px;
+    left: 90px;
+    right: 40px;
+  }
+}
+.Info .content .slider .bottomBox .progressBar .fill {
+  height: 100%;
+  background: linear-gradient(to right, transparent, yellow 20%, yellow 80%, transparent);
+  border-radius: 4px;
+  transition: width 0.3s ease;
+}
+.Info .content .slider .bottomBox .counter {
+  font-size: 1.5rem;
+  font-weight: bold;
+}
+
+/*# sourceMappingURL=Info.module.css.map */
