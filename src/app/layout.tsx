@@ -46,6 +46,16 @@ export const metadata: Metadata = {
         initialScale: 1,
         maximumScale: 5,
     },
+    icons: {
+        icon: [
+            {url: '/favicon.ico', sizes: 'any'},
+            {url: '/icon.svg', type: 'image/svg+xml'}
+        ],
+        apple: [
+            {url: '/apple-touch-icon.png'}
+        ],
+        shortcut: [{url: '/favicon.ico'}],
+    },
     // Open Graph / Facebook
     openGraph: {
         type: 'website',
@@ -56,7 +66,7 @@ export const metadata: Metadata = {
         description: 'Altynpay - надежная платежная система для быстрых переводов и оплаты услуг. Безопасные транзакции, выгодные тарифы и круглосуточная поддержка.',
         images: [
             {
-                url: 'https://altynpay.kg/og-image.jpg', // Replace with your actual image path
+                url: 'https://altynpay.kg/og-image.jpg',
                 width: 1200,
                 height: 630,
                 alt: 'Altynpay - платежная система',
@@ -68,8 +78,8 @@ export const metadata: Metadata = {
         card: 'summary_large_image',
         title: 'Altynpay | Быстрые и безопасные платежи',
         description: 'Altynpay - надежная платежная система для быстрых переводов и оплаты услуг.',
-        images: ['https://altynpay.com/twitter-image.jpg'], // Replace with your actual image path
-        creator: '@altynpay', // Replace with your actual Twitter handle
+        images: ['https://altynpay.kg/twitter-image.jpg'],
+        creator: '@altynpay',
     },
     applicationName: 'Altynpay',
     appleWebApp: {
@@ -87,12 +97,6 @@ export default function RootLayout({
 }>) {
     return (
         <html lang="ru" className={`${inter.variable} ${montserrat.variable}`}>
-        <head>
-            <link rel="icon" href="/favicon.ico" sizes="any"/>
-            <link rel="icon" href="/favicon.ico" type="image/svg+xml"/>
-            <link rel="apple-touch-icon" href="/favicon.ico"/>
-            <link rel="manifest" href="/manifest.json"/>
-        </head>
         <body>
         {children}
         </body>
