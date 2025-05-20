@@ -1,0 +1,164 @@
+@font-face {
+  font-family: "Mail Sans Roman";
+  src: url("/public/fonts/MailSansRoman-Light.woff2") format("woff2"), url("/public/fonts/MailSansRoman-Light.woff") format("woff");
+  font-weight: normal;
+  font-style: normal;
+  font-display: swap;
+}
+.Connecting .content .header {
+  text-align: center;
+  margin-bottom: 50px;
+  display: flex;
+  align-items: center;
+  flex-direction: column;
+}
+.Connecting .content .header .subtitle {
+  color: #ffeb3b;
+  display: block;
+  font-size: 19px;
+  margin-bottom: 10px;
+  background: rgba(255, 190, 46, 0.1098039216);
+  border: 1px solid rgba(255, 255, 255, 0.1019607843);
+  padding: 16px 20px;
+  width: 200px;
+  border-radius: 100px;
+}
+@media (max-width: 820px) {
+  .Connecting .content .header .subtitle {
+    font-size: 14px;
+    padding: 7px 15px;
+  }
+}
+.Connecting .content .header .title {
+  font-size: 36px;
+  font-weight: 700;
+  margin: 0;
+  line-height: 1.2;
+}
+@media (max-width: 820px) {
+  .Connecting .content .header .title {
+    font-size: 28px;
+  }
+}
+.Connecting .content .cards {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+@media (max-width: 820px) {
+  .Connecting .content .cards {
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+    width: 100%;
+  }
+}
+.Connecting .content .cards .box {
+  display: flex;
+  align-items: center;
+  flex-direction: column;
+  gap: 30px;
+}
+.Connecting .content .cards .box .card {
+  display: flex;
+  align-items: center;
+  flex-direction: column;
+  gap: 10px;
+  width: 500px;
+  height: 450px;
+  padding: 0 40px;
+  background: linear-gradient(305.11deg, rgba(255, 255, 255, 0.31) -129.42%, rgba(255, 255, 255, 0.04) 76.25%);
+  border: 1px solid rgba(245, 245, 245, 0.2509803922);
+  border-radius: 40px;
+}
+@media (max-width: 820px) {
+  .Connecting .content .cards .box .card {
+    width: 90%;
+    height: 300px;
+  }
+}
+.Connecting .content .cards .box .card img {
+  object-fit: cover;
+  width: 300px;
+  height: 300px;
+}
+@media (max-width: 820px) {
+  .Connecting .content .cards .box .card img {
+    width: 180px;
+    height: 180px;
+  }
+}
+.Connecting .content .cards .box .card p {
+  text-align: center;
+  font-family: "Mail Sans Roman", sans-serif;
+  font-weight: 400;
+  font-size: 24px;
+}
+@media (max-width: 820px) {
+  .Connecting .content .cards .box .card p {
+    font-size: 16px;
+  }
+}
+.Connecting .content .cards .box .stepWrapper {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  position: relative;
+  margin-top: 30px;
+}
+@media (max-width: 820px) {
+  .Connecting .content .cards .box .stepWrapper {
+    margin-top: 10px;
+  }
+}
+.Connecting .content .cards .box .stepWrapper::before, .Connecting .content .cards .box .stepWrapper::after {
+  content: "";
+  flex: 1;
+  height: 1px;
+  width: 150px;
+  background: linear-gradient(to right, transparent, rgba(255, 255, 255, 0.5019607843));
+  position: relative;
+  top: 0;
+}
+.Connecting .content .cards .box .stepWrapper::before {
+  margin-right: 20px;
+}
+.Connecting .content .cards .box .stepWrapper::after {
+  margin-left: 20px;
+  background: linear-gradient(to left, transparent, rgba(255, 255, 255, 0.5019607843));
+}
+.Connecting .content .cards .box .stepNumber {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-family: "Montserrat";
+  font-weight: 600;
+  font-size: 24px;
+  border: 1px solid #ffffff;
+  padding: 10px;
+  border-radius: 50%;
+  width: 60px;
+  height: 60px;
+  background-color: #0e0f14;
+  position: relative;
+  z-index: 1;
+}
+.Connecting .content .buttonWrapper {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  margin-top: 40px;
+}
+.Connecting .content .buttonWrapper button {
+  font-family: "Montserrat";
+  font-weight: 800;
+  font-size: 20px;
+  line-height: 22px;
+  color: black;
+  padding: 16px 24px;
+  background: #fce803;
+  border-radius: 22px;
+  border: none;
+}
+
+/*# sourceMappingURL=Connecting.module.css.map */

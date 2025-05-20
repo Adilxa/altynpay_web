@@ -1,0 +1,201 @@
+.Hero {
+  padding: 50px 0;
+}
+@media (max-width: 820px) {
+  .Hero {
+    width: 100%;
+    padding: 0;
+  }
+}
+.Hero .content {
+  padding: 120px 90px;
+  background: linear-gradient(284.33deg, rgba(255, 204, 0, 0.19) -30.13%, rgba(14, 23, 89, 0) 43.83%, rgba(153, 153, 153, 0) 109.08%);
+  border-radius: 80px;
+  border: 1px solid rgba(255, 255, 255, 0.1098039216);
+  display: flex;
+  align-items: start;
+  flex-direction: column;
+  gap: 50px;
+}
+@media (max-width: 820px) {
+  .Hero .content {
+    padding: 30px 10px;
+    border-radius: 15px;
+  }
+}
+.Hero .content .blockRight {
+  width: 100%;
+  display: flex;
+  align-items: start;
+  justify-content: space-between;
+  gap: 60px;
+}
+@media (max-width: 820px) {
+  .Hero .content .blockRight {
+    display: flex;
+    align-items: center;
+    flex-direction: column-reverse;
+    gap: 30px;
+  }
+}
+.Hero .content .blockRight .box {
+  display: flex;
+  align-items: start;
+  flex-direction: column;
+  gap: 60px;
+}
+@media (max-width: 820px) {
+  .Hero .content .blockRight .box {
+    gap: 15px;
+  }
+}
+.Hero .content .blockRight .box h1 {
+  font-family: "Montserrat";
+  font-weight: 700;
+  font-size: 60px;
+  width: 700px;
+}
+@media (max-width: 820px) {
+  .Hero .content .blockRight .box h1 {
+    font-size: 28px;
+    width: 100%;
+  }
+}
+.Hero .content .blockRight .box .pButton {
+  width: 80%;
+  display: flex;
+  align-items: start;
+  flex-direction: column;
+  gap: 40px;
+}
+@media (max-width: 820px) {
+  .Hero .content .blockRight .box .pButton {
+    width: 100%;
+    align-items: center;
+  }
+}
+.Hero .content .blockRight .box .pButton p {
+  font-weight: 400;
+  font-size: 25px;
+  line-height: 130%;
+  color: #f5f5f5;
+  opacity: 0.7;
+}
+@media (max-width: 820px) {
+  .Hero .content .blockRight .box .pButton p {
+    font-size: 16px;
+  }
+}
+.Hero .content .blockRight .box .pButton button {
+  background: #fce803;
+  padding: 16px 24px;
+  border-radius: 22px;
+  color: #101318;
+  font-family: "Montserrat";
+  font-weight: 800;
+  font-size: 20px;
+  border: none;
+}
+.Hero .content .blockRight .blockFoto {
+  display: flex;
+  align-items: center;
+  flex-direction: column;
+  gap: 25px;
+}
+.Hero .content .blockRight .blockFoto img {
+  width: 300px;
+  height: 300px;
+}
+@media (max-width: 820px) {
+  .Hero .content .blockRight .blockFoto img {
+    width: 180px;
+    height: 180px;
+  }
+}
+.Hero .content .blockRight .blockFoto h6 {
+  font-family: Verdana;
+  font-weight: 400;
+  font-size: 30px;
+  color: #ffffff;
+  text-align: center;
+  width: 70%;
+}
+@media (max-width: 820px) {
+  .Hero .content .blockRight .blockFoto h6 {
+    font-size: 14px;
+  }
+}
+.Hero .content .blockLeft {
+  width: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+@media (max-width: 820px) {
+  .Hero .content .blockLeft {
+    flex-direction: column;
+    gap: 15px;
+  }
+}
+.Hero .content .blockLeft .comission {
+  width: 30%;
+  display: flex;
+  align-items: start;
+  flex-direction: column;
+  gap: 15px;
+}
+@media (max-width: 820px) {
+  .Hero .content .blockLeft .comission {
+    width: 100%;
+  }
+}
+.Hero .content .blockLeft .comission h4 {
+  font-family: "Montserrat";
+  font-weight: 700;
+  font-size: 36px;
+  color: #f5f5f5;
+}
+@media (max-width: 820px) {
+  .Hero .content .blockLeft .comission h4 {
+    font-size: 22px;
+    width: 80%;
+  }
+}
+.Hero .content .blockLeft .comission p {
+  font-weight: 400;
+  font-size: 25px;
+  color: #f5f5f5;
+}
+@media (max-width: 820px) {
+  .Hero .content .blockLeft .comission p {
+    font-size: 18px;
+  }
+}
+.Hero .content .blockLeft .nums {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 30px;
+  padding-right: 60px;
+}
+@media (max-width: 820px) {
+  .Hero .content .blockLeft .nums {
+    width: 100%;
+    justify-content: space-between;
+    margin-top: 15px;
+    padding-right: 0;
+  }
+}
+.Hero .content .blockLeft .nums span {
+  color: #f5f5f5;
+  font-family: "Montserrat";
+  font-weight: 700;
+  font-size: 50px;
+}
+@media (max-width: 820px) {
+  .Hero .content .blockLeft .nums span {
+    font-size: 28px;
+  }
+}
+
+/*# sourceMappingURL=Hero.module.css.map */
