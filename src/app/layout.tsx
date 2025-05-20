@@ -1,4 +1,4 @@
-import type {Metadata} from "next";
+import type {Metadata, Viewport} from "next";
 import "./globals.scss";
 import {Inter, Montserrat} from "next/font/google";
 
@@ -13,6 +13,12 @@ const montserrat = Montserrat({
     display: "swap",
     variable: "--font-montserrat",
 });
+
+export const viewport: Viewport = {
+    width: 'device-width',
+    initialScale: 1,
+    maximumScale: 5,
+};
 
 export const metadata: Metadata = {
     metadataBase: new URL('https://altynpay.kg'),
@@ -41,52 +47,11 @@ export const metadata: Metadata = {
             'max-snippet': -1,
         },
     },
-    viewport: {
-        width: 'device-width',
-        initialScale: 1,
-        maximumScale: 5,
-    },
     icons: {
-        icon: [
-            {url: '/favicon.ico', sizes: 'any'},
-            {url: '/icon.svg', type: 'image/svg+xml'}
-        ],
-        apple: [
-            {url: '/apple-touch-icon.png'}
-        ],
-        shortcut: [{url: '/favicon.ico'}],
-    },
-    // Open Graph / Facebook
-    openGraph: {
-        type: 'website',
-        locale: 'ru_RU',
-        url: 'https://altynpay.kg/',
-        siteName: 'Altynpay',
-        title: 'Altynpay | Быстрые и безопасные платежи',
-        description: 'Altynpay - надежная платежная система для быстрых переводов и оплаты услуг. Безопасные транзакции, выгодные тарифы и круглосуточная поддержка.',
-        images: [
-            {
-                url: 'https://altynpay.kg/og-image.jpg',
-                width: 1200,
-                height: 630,
-                alt: 'Altynpay - платежная система',
-            },
-        ],
-    },
-    // Twitter
-    twitter: {
-        card: 'summary_large_image',
-        title: 'Altynpay | Быстрые и безопасные платежи',
-        description: 'Altynpay - надежная платежная система для быстрых переводов и оплаты услуг.',
-        images: ['https://altynpay.kg/twitter-image.jpg'],
-        creator: '@altynpay',
+        icon: '/favicon.ico',
+        shortcut: '/favicon.ico',
     },
     applicationName: 'Altynpay',
-    appleWebApp: {
-        capable: true,
-        title: 'Altynpay',
-        statusBarStyle: 'black-translucent',
-    },
     category: 'finance',
 };
 
