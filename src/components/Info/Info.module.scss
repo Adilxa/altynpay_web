@@ -9,6 +9,15 @@
     @content;
   }
 }
+@font-face {
+  font-family: "Mail Sans Roman";
+  src: url("/public/fonts/MailSansRoman-Light.woff2") format("woff2"),
+    url("/public/fonts/MailSansRoman-Light.woff") format("woff");
+  font-weight: normal;
+  font-style: normal;
+  font-display: swap;
+}
+
 .Info {
   padding: 100px 0;
   .content {
@@ -19,6 +28,7 @@
       align-items: center;
       flex-direction: column;
       .subtitle {
+        font-family: "Montserrat";
         color: #ffeb3b;
         display: block;
         font-size: 18px;
@@ -36,6 +46,7 @@
       }
 
       .title {
+        font-family: "Montserrat";
         font-size: 36px;
         font-weight: 700;
         margin: 0;
@@ -81,7 +92,7 @@
           }
 
           h2 {
-            font-family: Verdana;
+            font-family: Verdana, Tahoma, sans-serif;
             font-weight: 700;
             font-size: 40px;
 
@@ -91,7 +102,7 @@
           }
 
           p {
-            font-family: "Mail Sans Roman";
+            font-family: "Mail Sans Roman", sans-serif;
             font-weight: 400;
             font-size: 20px;
             line-height: 130%;
@@ -118,7 +129,7 @@
               padding: 0.6rem 1rem;
               border-radius: 20px;
               border: 1px solid;
-              font-family: "Montserrat Alternates";
+              font-family: "Montserrat";
               font-weight: 500;
               font-size: 24px;
               leading-trim: Cap height;

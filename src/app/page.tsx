@@ -6,22 +6,20 @@ import Header from "@/components/Header/Header";
 import Hero from "@/components/Hero/Hero";
 import Info from "@/components/Info/Info";
 import Working from "@/components/Working/Working";
-import FastPayments from "@/components/FastPayments";
 
 const page = () => {
-    return (
-        <>
-            <Header/>
-            <Hero/>
-            {/*<FastPayments/>*/}
-            <Features/>
-            <Info/>
-            <Connecting/>
-            <Working/>
-            <ContactBot/>
-            <Footer/>
-        </>
-    );
+  return (
+    <>
+      <Header />
+      <Hero />
+      <Features />
+      <Info />
+      <Connecting />
+      <Working />
+      <ContactBot />
+      <Footer />
+    </>
+  );
 };
 
 export default page;
