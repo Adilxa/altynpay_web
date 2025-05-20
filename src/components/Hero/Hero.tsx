@@ -3,6 +3,7 @@ import Image from "next/image";
 import s from "./Hero.module.scss";
 import payment from "@/assets/images/Payment.png";
 import { useTranslation } from "@/hooks/useTranslation";
+import Link from "next/link";
 
 const Hero = () => {
   const { t } = useTranslation();
@@ -16,7 +17,9 @@ const Hero = () => {
               <h1>{t.heroTitle}</h1>
               <div className={s.pButton}>
                 <p>{t.heroSubtitle}</p>
-                <button>{t.connectBusiness}</button>
+                <Link href="/form">
+                  <button>{t.connectBusiness}</button>
+                </Link>
               </div>
             </div>
 

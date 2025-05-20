@@ -4,6 +4,10 @@ import wallet from "@/assets/images/wallet-dynamic-premium.png";
 
 export const dictionary = {
   ru: {
+    formTitle: "Свяжитесь с нами или оставьте свои контакты",
+    formBtmn: "Отправить заявку",
+    //
+
     home: "Главная",
     about: "О системе",
     howToPay: "Как оплатить",
@@ -35,7 +39,6 @@ export const dictionary = {
     lowerCostsDesc:
       "Altyn Pay — современная альтернатива эквайрингу: терминал и оборудование не обязательны",
     //
-    // Info.tsx – кастомный контент для слайдов
     infoSection: {
       infoSubtitle: "Инновации и качество",
       infoTitleLine1: "Наши продукты",
@@ -178,6 +181,8 @@ export const dictionary = {
           buttons: ["Стиль", "Тренд", "Шаардык"],
         },
       ],
+      //
+      formTitle: "Свяжитесь с нами или оставьте свои контакты",
     },
     //
     connectingSubtitle: "Бир нече баскычта",
@@ -226,5 +231,8 @@ export const dictionary = {
     contacts: "Контакты",
     telegram: "Telegram",
     whatsapp: "WhatsApp",
+    //
+    formTitle: "Биз менен байланышыңыз же байланыш маалыматыңызды калтырыңыз",
+    formBtmn: "Өтүнмө тапшыруу",
   },
 };
