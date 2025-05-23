@@ -34,7 +34,12 @@ const BurgerMenu: React.FC = () => {
                         onClick={() => {
                             setIsOpenModal(!isOpenModal);
                         }}
-                        href="#connecting">{t.connecting}</Link>
+                        href="/#connecting">{t.connecting}</Link>
+                    <Link
+                        onClick={() => {
+                            setIsOpenModal(!isOpenModal);
+                        }}
+                        href="/#licenses">{t.licenses}</Link>
                 </div>
                 <button>{t.account}</button>
             </nav>
