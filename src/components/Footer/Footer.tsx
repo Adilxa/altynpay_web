@@ -28,6 +28,8 @@ const Footer = () => {
                             <Link href="/#working">{t.howToPay}</Link>
                             {/*<Link href="/#main">{t.pricing}</Link>*/}
                             <Link href="/#connecting">{t.connection}</Link>
+                            <Link href={'/#licenses'}>{t.licenses}</Link>
+
                         </nav>
                     </header>
 

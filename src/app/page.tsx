@@ -6,20 +6,22 @@ import Header from "@/components/Header/Header";
 import Hero from "@/components/Hero/Hero";
 import Info from "@/components/Info/Info";
 import Working from "@/components/Working/Working";
+import LicensesSlider from "@/components/LicensesSlider";
 
 const page = () => {
-  return (
-    <>
-      <Header />
-      <Hero />
-      <Features />
-      <Info />
-      <Connecting />
-      <Working />
-      <ContactBot />
-      <Footer />
-    </>
-  );
+    return (
+        <>
+            <Header/>
+            <Hero/>
+            <Features/>
+            <Info/>
+            <Connecting/>
+            <Working/>
+            <ContactBot/>
+            <LicensesSlider/>
+            <Footer/>
+        </>
+    );
 };
 
 export default page;

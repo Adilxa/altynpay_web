@@ -13,6 +13,7 @@ export const dictionary = {
         howToPay: "Как работает",
         connecting: "Подключение",
         account: "Личный кабинет",
+        licenses: "Лицензии",
         //
         heroTitle: "Быстрые и безопасные QR-платежи с Altyn Pay",
         heroSubtitle:
@@ -21,6 +22,7 @@ export const dictionary = {
         instantPayments: "Мгновенные платежи с Altyn Pay",
         commissionTitle: "Какой % комиссии для вашего бизнеса",
         commissionSubtitle: "Ставка ниже, чем за эквайринг",
+        ourDocuments: "Наши документы",
         //
         featuresSubtitle: "Особенности",
         featuresTitleLine1: "Преимущества",
@@ -124,6 +126,8 @@ export const dictionary = {
         howToPay: "Кантип төлөөгө болот",
         connecting: "Туташтыруу",
         account: "Жеке кабинет",
+        licenses: "Лицензиялар",
+        ourDocuments: "Биздин документтер",
         //
         heroTitle: "Altyn Pay менен ыкчам жана коопсуз QR төлөмдөр",
         heroSubtitle:
