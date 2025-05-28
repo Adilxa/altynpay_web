@@ -119,9 +119,17 @@ export const dictionary = {
         contacts: "Контакты",
         telegram: "Telegram",
         whatsapp: "WhatsApp",
+        login: "Войти",
+        email: "Email",
+        password: "Пароль",
+        redirectToAdmin: "Вход в систему"
     },
     kg: {
+        redirectToAdmin: "Системага кирүү",
+        login: "Кирүү",
         home: "Башкы бет",
+        email: "Email",
+        password: "Сыр сөз",
         about: "Система жөнүндө",
         howToPay: "Кантип төлөөгө болот",
         connecting: "Туташтыруу",

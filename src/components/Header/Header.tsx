@@ -9,11 +9,14 @@ import BurgerButton from "@/ui/burgerButton/BurgerButton";
 import {useHeaderStore} from "@/stores/useHeaderStore";
 import BurgerMenu from "@/ui/burgerMenu/BurgerMenu";
 import {useTranslation} from "@/hooks/useTranslation";
+import {useRouter} from "next/navigation";
 
 const Header = () => {
     const [isMobile, setIsMobile] = useState(false);
     const {isOpenModal, setIsOpenModal} = useHeaderStore();
     const {t} = useTranslation();
+
+    const router = useRouter()
 
     useEffect(() => {
         setIsMobile(window.innerWidth < 1000);
@@ -21,6 +24,7 @@ const Header = () => {
         window.addEventListener("resize", handleResize);
         return () => window.removeEventListener("resize", handleResize);
     }, []);
+
 
     return (
         <header className={s.Header}>
@@ -41,7 +45,11 @@ const Header = () => {
                             </nav>
                             <div className={s.btns}>
                                 <LanguageSwitcher/>
-                                <button>{t.account}</button>
+                                <button
+                                    onClick={() => router.push(
+                                        "login"
+                                    )}
+                                >{t.account}</button>
                             </div>
                         </nav>
                     ) : (
