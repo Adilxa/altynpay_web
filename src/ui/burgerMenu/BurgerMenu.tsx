@@ -5,10 +5,13 @@ import Link from "next/link";
 import {useHeaderStore} from "@/stores/useHeaderStore";
 import LanguageSwitcher from "@/ui/LanguageSwitcher/LanguageSwitcher";
 import {useTranslation} from "@/hooks/useTranslation";
+import {useRouter} from "next/navigation";
 
 const BurgerMenu: React.FC = () => {
     const {isOpenModal, setIsOpenModal} = useHeaderStore();
     const {t} = useTranslation();
+
+    const router = useRouter()
 
     return (
         <div className={styles.main}>
@@ -41,7 +44,11 @@ const BurgerMenu: React.FC = () => {
                         }}
                         href="/#licenses">{t.licenses}</Link>
                 </div>
-                <button>{t.account}</button>
+                <button
+                    onClick={() => router.push(
+                        "login"
+                    )}
+                >{t.account}</button>
             </nav>
         </div>
     );
